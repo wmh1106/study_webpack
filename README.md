@@ -1,7 +1,9 @@
+任务二：raw-loader
 
-要求：
+- 请抄袭 raw-loader 的源码：https://github.com/webpack-contrib/raw-loader/blob/master/src/index.js
+- 自己写一个 loaders/raw-loader.js。
+- 然后参考 webpack 文档 https://webpack.js.org/contribute/writing-a-loader/
+- 让所有 .txt 文件被你的 raw-loader 加载。
+- 最后，在你的 index.js 里加载一个 test.txt 文件（事先创建好），并在浏览器控制台里打印出文件的内容。
 
-- 使用 babel 相关 loader 处理 JS 文件
-- 使用 HtmlWebpackPlugin 创建 HTML 文件
-- 运行 npm run build 后，dist 目录里得到 index.html 以及其他 JS 文件
-- 打开 index.html 后，index.html 引用的 JS 文件在页面里写出 hello world 几个字
+请将所有代码放在一个新的代码仓库里，并把链接回复在下方。

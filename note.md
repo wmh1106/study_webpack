@@ -1,3 +1,5 @@
+# webpack
+
 ## webpack：模块打包工具
 
 ### 1. 解决的问题：
@@ -21,7 +23,7 @@ export default xx
 
 ### 3. webpack 环境搭建
 
-```js
+```
 npm init -y
 npm install webpack webpack-cli -D
 
@@ -73,7 +75,7 @@ plugins：插件的功能，就是在某个时刻干一件事情
 
 [配置：webpack-dev-server](https://webpack.js.org/configuration/dev-server)
 
-```js
+```
 devServer: {
     // 从 dist 开启一个服务
     contentBase: "./dist",
@@ -120,7 +122,7 @@ if(module.hot){
   - `@babel/plugin-transform-runtime`
 
 
-```js
+```
 module: {
     rules: [
         {
@@ -188,7 +190,7 @@ module: {
 
 没引入的，就不打包
 
-```js
+```
 // webpack.dev.js
 optimization: {
     // Tree Shaking
@@ -208,13 +210,13 @@ optimization: {
 
 `webpack.dev.js`引入`webpack-merge`
 
-```js
+```
 import merge from 'webpack-merge'
 ```
 
 ### 13. webpack 和 Code Splitting 代码分隔
 
-```js
+```
 optimization: {
     // 代码分割
     splitChunks: {
@@ -250,7 +252,7 @@ babel-plugin-dynamic-import-webpack
 
 ![异步引入](http://ww1.sinaimg.cn/large/006tNc79ly1g3gcxpvf4dj31f40jwagh.jpg)
 
-```js
+```
 # .babelrc
 {
   "plugins": [],
